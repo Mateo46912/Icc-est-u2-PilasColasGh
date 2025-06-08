@@ -3,9 +3,10 @@ import Ejercicio_02_sorting.StackSorter;
 import Materia.StackGen;
 public class App {
     public static void main(String[] args) {
-
         //Ejercicio_01_sign
+        //Instancia
         SignValidator ejercicio01 = new SignValidator();
+        //Ejecucion
         System.out.println("--EJERCICIO 01--");
         System.out.println("Se ingreso los caracteres --> ([]){} <--");
         boolean resultado = ejercicio01.isValid("([]){}");
@@ -19,9 +20,11 @@ public class App {
         System.out.println();
 
         //Ejercicio_02_sorting 
+        //Instancias
         StackSorter ejercicio02 = new StackSorter();
-        System.out.println("--EJERCICIO 02--");
         StackGen<Integer> stackOrdenar = new StackGen<Integer>();
+        //Ejecuciom
+        System.out.println("--EJERCICIO 02--");
         stackOrdenar.push(2);
         stackOrdenar.push(4);
         stackOrdenar.push(1);

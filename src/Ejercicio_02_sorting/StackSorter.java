@@ -15,10 +15,10 @@ public class StackSorter {
                 stackOrdenar.push(ordenado);
             }
 
-            stackTemp.push(tmp);
+            stackTemp.push(tmp);                    //Agregar siempre que no se cumpla el segundo while
         }
         while (!stackTemp.isEmpty())
-            stackOrdenar.push(stackTemp.pop());
+            stackOrdenar.push(stackTemp.pop());     //Retornamos los valores del stack temporal al stack que queremos ordenar
     }
 
 }
